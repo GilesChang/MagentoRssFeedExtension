@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+	
+	<rssextension_index_index>
+        <block type="SD_RSSExtension/NewProduct" output="toHtml" name="SD.RSSExtension.NewProduct">
+            <action method="addPriceBlockType"><type>msrp_rss</type><block>catalog/product_price</block><template>catalog/product/price_msrp_rss.phtml</template></action>
+        </block>
+    </rssextension_index_index>
+	
+	
+</layout>

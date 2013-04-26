@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <modules>
+    <SD_RSSExtension>
+      <version>0.1.0</version>
+    </SD_RSSExtension>
+  </modules>
+  
+  <global>
+    <blocks>
+      <SD_RSSExtension>
+        <class>SD_RSSExtension_Block</class>
+      </SD_RSSExtension>
+    </blocks>
+  </global>
+  
+  <frontend>
+	<routers>
+      <rssextension>
+        <use>standard</use>
+          <args>
+            <module>SD_RSSExtension</module>
+            <frontName>rssextension</frontName>
+          </args>
+       </rssextension>
+    </routers>
+	<layout>
+      <updates>
+        <catalog>
+          <file>../../../default/SDTheme/layout/catalog.xml</file>
+	    </catalog>
+		<reports>
+		  <file>../../../default/SDTheme/layout/reports.xml</file>
+		</reports>
+		<rssextension>
+		  <file>../../../default/SDTheme/layout/RSSExtension.xml</file>
+		</rssextension>
+      </updates>
+    </layout>
+  </frontend>
+  
+</config>
